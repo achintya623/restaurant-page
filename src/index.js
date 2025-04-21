@@ -3,6 +3,8 @@ import './home'
 import { modHome } from './home';
 import './menu'
 import { modMenu } from './menu';
+import './about'
+import { modAbout } from './about';
 
 modHome.displayHome();
 
@@ -22,4 +24,8 @@ const display= (function(){
         modMenu.displayMenu();
     })
 
+    about.addEventListener("click",()=>{
+        content.innerHTML=null;
+        modAbout.displayAbout();
+    })
 }) ();
